@@ -1,0 +1,5 @@
+# Copie este arquivo para "reduza.properties" (na mesma pasta de onde o sistema é executado)
+# e ajuste o usuário e a senha do seu MySQL.
+db.url=jdbc:mysql://localhost:3306/reduza_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Sao_Paulo&characterEncoding=UTF-8
+db.usuario=root
+db.senha=

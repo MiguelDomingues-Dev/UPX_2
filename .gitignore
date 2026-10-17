@@ -1,0 +1,20 @@
+# Compilação
+target/
+out/
+*.class
+fontes.txt
+
+# Configuração local (tem senha do banco)
+reduza.properties
+
+# Driver baixado manualmente
+lib/*.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+nbproject/
