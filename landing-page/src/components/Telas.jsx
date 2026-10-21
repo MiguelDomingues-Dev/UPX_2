@@ -5,7 +5,7 @@ const telas = [
   {
     aba: 'Painel',
     titulo: 'Painel do mês',
-    imagem: '/telas/painel.png',
+    imagem: 'telas/painel.png',
     texto: 'O resumo que o gestor abre primeiro.',
     itens: [
       'Total do mês comparado com o anterior',
@@ -17,35 +17,35 @@ const telas = [
   {
     aba: 'Registrar resíduo',
     titulo: 'Registrar resíduo',
-    imagem: '/telas/registro.png',
+    imagem: 'telas/registro.png',
     texto:
       'Setor, categoria, quilos e data. A bolinha mostra a cor do coletor, e o sistema confirma o total do mês ao salvar.',
   },
   {
     aba: 'Histórico',
     titulo: 'Histórico',
-    imagem: '/telas/historico.png',
+    imagem: 'telas/historico.png',
     texto:
       'Todos os registros, com filtro por período, setor e categoria. O botão Exportar CSV gera uma planilha que abre no Excel.',
   },
   {
     aba: 'Metas',
     titulo: 'Metas de redução',
-    imagem: '/telas/metas.png',
+    imagem: 'telas/metas.png',
     texto:
       'Cada meta parte da média dos meses anteriores. 100% quer dizer alvo atingido. O mês em andamento só conta quando fecha.',
   },
   {
     aba: 'Descartáveis',
     titulo: 'Piloto de descartáveis',
-    imagem: '/telas/descartaveis.png',
+    imagem: 'telas/descartaveis.png',
     texto:
       'Consumo de copos mês a mês, gasto em reais e custo por uso do copo e da caneca. O simulador mostra em quantos meses a troca se paga.',
   },
   {
     aba: 'Inspeções',
     titulo: 'Inspeções de descarte',
-    imagem: '/telas/inspecoes.png',
+    imagem: 'telas/inspecoes.png',
     texto:
       'Alguém confere os coletores e marca se o descarte estava correto. O placar é por setor, nunca por pessoa.',
   },

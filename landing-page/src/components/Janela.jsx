@@ -8,7 +8,7 @@ export default function Janela({ titulo, imagem, alt }) {
         <i></i>
         <span>Reduza · {titulo}</span>
       </div>
-      <img src={imagem} alt={alt} />
+      <img src={import.meta.env.BASE_URL + imagem} alt={alt} />
     </div>
   )
 }

@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
 
       <div className="hero-imagem">
-        <Janela titulo="Painel do mês" imagem="/telas/painel.png" alt="Painel do mês do Reduza" />
+        <Janela titulo="Painel do mês" imagem="telas/painel.png" alt="Painel do mês do Reduza" />
       </div>
     </section>
   )
