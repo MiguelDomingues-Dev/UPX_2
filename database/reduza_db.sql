@@ -364,25 +364,3 @@ WHERE m.ativa = TRUE
 GROUP BY m.id, m.descricao, m.setor_id, s.nome, m.categoria_id, c.nome,
          m.periodo_inicio, m.periodo_fim, m.linha_base_kg, m.reducao_percentual;
 
--- =====================================================================
--- DADOS INICIAIS
--- Usuário administrador padrão: admin@reduza.local / senha reduza123
--- (troque a senha no primeiro acesso, em Cadastros > Usuários)
--- =====================================================================
-
-INSERT INTO usuario (nome, email, senha_hash, perfil) VALUES
-('Administrador', 'admin@reduza.local', 'pbkdf2_sha256$120000$KkrYQjpH8O+spzcbbgDGxg==$WWEPlaZAIv3PxO9412Pl4m4XzWhj5LzUXObA8AmnUDk=', 'ADMIN');
-
--- Categorias padrão; cores conforme CONAMA 275/2001.
--- custo_kg (custo de destinação) fica vazio até a empresa informar.
-INSERT INTO categoria (nome, cor_coletor, reciclavel, perigoso) VALUES
-('Plástico',           'Vermelho', TRUE,  FALSE),
-('Papel',              'Azul',     TRUE,  FALSE),
-('Não reciclável',     'Cinza',    FALSE, FALSE),
-('Resíduos perigosos', 'Laranja',  FALSE, TRUE),
-('Orgânico',           'Marrom',   FALSE, FALSE);
-
--- Peso do copo conforme especificações baseadas na ABNT NBR 14865
-INSERT INTO item (categoria_id, nome, tipo, peso_unitario_g, usos_estimados, fonte_peso) VALUES
-(1, 'Copo plástico 200 ml', 'DESCARTAVEL', 1.80, 1,
- 'Especificação técnica baseada na ABNT NBR 14865 (180 g por pacote de 100)');
