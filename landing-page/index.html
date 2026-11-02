@@ -2,18 +2,316 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Reduza: gestão de resíduos para empresas. Projeto da disciplina UPX2, Centro Universitário Facens, 2026."
     />
-    <title>Reduza</title>
+    <title>Reduza | Banner Digital</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="topbar">
+      <a href="#inicio" class="logo">Reduza</a>
+      <nav class="menu" id="menu">
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Solução</a>
+        <a href="#demo">Demonstração</a>
+        <a href="#equipe">Equipe</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        ☰
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content reveal">
+          <span class="tag"
+            >Gestão de resíduos para empresas • UPX2 Facens 2026</span
+          >
+          <h1>Reduza</h1>
+          <p class="subtitle">
+            Sua empresa já paga para jogar resíduo fora. O Reduza mostra, por
+            setor, quanto resíduo a empresa gera e quanto isso custa: a
+            destinação paga, as compras de descartáveis e o reciclável que vira
+            rejeito por descarte errado.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#demo">Ver Demonstração</a>
+            <a
+              class="btn secondary"
+              href="https://github.com/MiguelDomingues-Dev/UPX_2"
+              target="_blank"
+              rel="noopener"
+              >Acessar GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-title">Painel do mês</div>
+              <div class="mockup-screen">
+                <div class="chart-card"></div>
+                <div class="chart-lines">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <p>
+                Total do mês comparado com o anterior, custo de destinação em
+                reais, taxa de descarte correto e setor que mais gera resíduo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics reveal" aria-label="Indicadores do projeto">
+        <article>
+          <strong>81 mi t</strong>
+          <span
+            >De resíduos sólidos urbanos gerados no Brasil em 2023 (ABREMA,
+            2024)</span
+          >
+        </article>
+        <article>
+          <strong>41%</strong>
+          <span>Desse total teve destino inadequado</span>
+        </article>
+        <article>
+          <strong>R$ 50 mi</strong>
+          <span
+            >Multa máxima por descarte irregular (Decreto nº 6.514/2008)</span
+          >
+        </article>
+        <article>
+          <strong>QR</strong>
+          <span>Acesso rápido na apresentação</span>
+        </article>
+      </section>
+
+      <section class="section split" id="problema">
+        <div class="section-text reveal">
+          <span class="section-label">O problema</span>
+          <h2>O desperdício existe, mas ninguém vê o custo.</h2>
+          <p>
+            Quando alguém joga um copo com café no coletor de papel, o lote pode
+            virar rejeito. A empresa paga para descartar o que poderia vender.
+            Sem medir por setor, esse custo não aparece em nenhum relatório.
+          </p>
+          <p>
+            A Política Nacional de Resíduos Sólidos (Lei nº 12.305/2010) exige
+            que empresas sujeitas ao plano de gerenciamento controlem e
+            comprovem o destino dos seus resíduos. A multa por descarte
+            irregular vai de R$ 5 mil a R$ 50 milhões.
+          </p>
+        </div>
+        <div class="highlight-box reveal">
+          <h3>O copo vai junto com o café</h3>
+          <p>
+            Copos descartáveis, inclusive os de papel, têm uma película plástica
+            por dentro. Em contato com água a 85–90 °C, um copo de 100 ml
+            liberou cerca de 25 mil micropartículas de plástico em 15 minutos.
+            Trocar o descartável por uma caneca reduz o resíduo e essa exposição
+            ao mesmo tempo.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="solucao">
+        <div class="section-heading reveal">
+          <span class="section-label">Como funciona</span>
+          <h2>Três etapas, do registro à redução.</h2>
+          <p>
+            Com os números, a empresa gasta menos e cumpre a lei com menos
+            trabalho.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="icon">📝</div>
+            <h3>Registrar</h3>
+            <p>
+              Cada setor informa o peso do resíduo por categoria: plástico,
+              papel, não reciclável e perigosos. As compras de descartáveis
+              entram pelo valor do pacote.
+            </p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">📊</div>
+            <h3>Acompanhar</h3>
+            <p>
+              O painel mostra o total do mês, a variação em relação ao mês
+              anterior, o setor que mais gera e o custo em reais.
+            </p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">♻️</div>
+            <h3>Reduzir</h3>
+            <p>
+              A empresa define metas por setor e acompanha a economia em reais:
+              menos rejeito pago, mais reciclável vendido e menos descartáveis
+              comprados.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dark" id="tecnologias">
+        <div class="section-heading reveal">
+          <span class="section-label">Implementação</span>
+          <h2>Tecnologias utilizadas</h2>
+          <p>O sistema Reduza foi feito em Java, com banco de dados MySQL.</p>
+        </div>
+        <div class="tech-list reveal">
+          <span>Java</span>
+          <span>MySQL</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Git</span>
+          <span>GitHub Pages</span>
+        </div>
+      </section>
+
+      <section class="section split" id="arquitetura">
+        <div class="section-text reveal">
+          <span class="section-label">Arquitetura</span>
+          <h2>Como a solução funciona</h2>
+          <p>
+            Cada setor registra o resíduo (setor, categoria, quilos e data) na
+            aplicação Java. Os dados ficam no banco MySQL e alimentam o painel
+            do mês, o histórico com filtros, as metas por setor e a exportação
+            em CSV, que abre no Excel.
+          </p>
+        </div>
+        <div class="diagram reveal">
+          <div>Setores</div>
+          <span>→</span>
+          <div>Aplicação Java</div>
+          <span>→</span>
+          <div>Banco MySQL</div>
+          <span>→</span>
+          <div>Painel e Relatórios</div>
+        </div>
+      </section>
+
+      <section class="section" id="demo">
+        <div class="section-heading reveal">
+          <span class="section-label">O sistema</span>
+          <h2>Telas reais do protótipo</h2>
+          <p>
+            Painel do mês, registro de resíduo, histórico, metas por setor,
+            copos e canecas e inspeção do descarte. Dados fictícios de uma
+            empresa exemplo, usados para demonstração.
+          </p>
+        </div>
+        <div class="demo-box reveal">
+          <div class="play-button">▶</div>
+          <h3>Área de Demonstração</h3>
+          <p>
+            O simulador de copos e canecas mostra em quantos meses a troca se
+            paga, e a inspeção do descarte gera um placar por setor, nunca por
+            pessoa.
+          </p>
+          <a
+            class="btn primary"
+            href="https://migueldomingues-dev.github.io/UPX_2/"
+            target="_blank"
+            rel="noopener"
+            >Ver Protótipo</a
+          >
+        </div>
+      </section>
+
+      <section class="section split" id="ods">
+        <div class="section-text reveal">
+          <span class="section-label">Impacto</span>
+          <h2>Resultados esperados e ODS</h2>
+          <p>
+            Menos resíduo para a empresa, mais saúde para quem trabalha nela.
+            Descartar certo precisa ser fácil: o Reduza registra os pontos de
+            coleta de cada setor e o resultado de inspeções simples do descarte,
+            seguindo as cores dos coletores da Resolução CONAMA nº 275/2001.
+          </p>
+        </div>
+        <div class="ods-card reveal">
+          <strong>ODS 12</strong>
+          <p>Consumo e produção responsáveis</p>
+          <small
+            >Também: ODS 3 (Saúde e bem-estar), ODS 8 (Trabalho decente e
+            crescimento econômico), ODS 9 (Indústria, inovação e infraestrutura)
+            e ODS 11 (Cidades e comunidades sustentáveis).</small
+          >
+        </div>
+      </section>
+
+      <section class="section" id="equipe">
+        <div class="section-heading reveal">
+          <span class="section-label">Equipe DevNexus</span>
+          <h2>Quem está construindo o Reduza</h2>
+          <p>Orientação: Profa. Brenda Medina • Mentoria: Prof. Daniel Ohata</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="avatar">M</div>
+            <h3>Miguel</h3>
+            <p>Gestor do projeto e engenheiro de software</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">R</div>
+            <h3>Rafael</h3>
+            <p>Redes e banco de dados</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">T</div>
+            <h3>Thiago</h3>
+            <p>Scrum Master e Product Owner</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">M</div>
+            <h3>Marcos</h3>
+            <p>Requisitos e viabilidade</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="avatar">L</div>
+            <h3>Luciana</h3>
+            <p>Front-end e back-end</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-section" id="acesso">
+        <div class="cta-content reveal">
+          <h2>Quer testar o Reduza na sua empresa?</h2>
+          <p>
+            O projeto está em desenvolvimento, com piloto em uma empresa da
+            região de Sorocaba. Use o QR Code para abrir esta página no celular
+            e acompanhe o andamento pelo repositório.
+          </p>
+        </div>
+        <div class="qr-card reveal">
+          <img id="qrCode" alt="QR Code da landing page" />
+          <small>QR Code gerado automaticamente com o link desta página.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Centro Universitário Facens • UPX2 – Usina de Projetos Experimentais II
+        • Análise e Desenvolvimento de Sistemas • Sorocaba/SP • 2026
+      </p>
+      <p>Desenvolvido pela equipe DevNexus.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

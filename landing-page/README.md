@@ -1,73 +1,246 @@
-# Landing page do Reduza
+# Banner Digital Interativo para Projetos Acadêmicos
 
-Página de apresentação do **Reduza**, o sistema de gestão de resíduos que estamos desenvolvendo na UPX2 (Facens, 2026).
+Este repositório contém um modelo de landing page em formato de **banner digital interativo**, desenvolvido para apresentação de projetos acadêmicos, startups, MVPs, UPX, TCCs e disciplinas de desenvolvimento de software.
 
-A ideia da página é explicar o projeto para quem não conhece: qual problema ele resolve, como o sistema funciona, as telas do protótipo e quanto uma empresa pode economizar usando ele.
+A página pode ser publicada gratuitamente no **GitHub Pages** e utilizada em apresentações, bancas, pitchs, feiras acadêmicas e portfólio profissional.
 
-## O que tem na página
-
-- Apresentação do projeto e do problema (custo do resíduo, multas, Lei 12.305)
-- Como funciona: registrar, acompanhar e reduzir
-- Telas do sistema em Java, com abas para trocar entre elas
-- Próximos passos do projeto
-- Calculadora de retorno: a empresa coloca os próprios números e vê a economia estimada
-- Planos, sustentabilidade e qualidade de vida, equipe e referências
-
-## Tecnologias
-
-- React
-- Vite
-- CSS puro (sem framework)
-
-## Como rodar
-
-Precisa ter o Node.js instalado.
+## Estrutura do projeto
 
 ```bash
-cd landing-page
-npm install
-npm run dev
+banner-digital-github/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    ├── imagens/
+    └── docs/
 ```
 
-Depois é só abrir o endereço que aparece no terminal (normalmente `http://localhost:5173`).
+## O que os alunos devem alterar
 
-Para gerar a versão final:
+No arquivo `index.html`, substituir os textos genéricos por informações reais do projeto:
+
+- Nome do projeto
+- Slogan
+- Problema identificado
+- Solução proposta
+- Funcionalidades
+- Tecnologias utilizadas
+- Arquitetura da solução
+- Link do protótipo Figma
+- Link do repositório GitHub
+- Integrantes da equipe
+- Disciplina, instituição e semestre
+
+No arquivo `style.css`, é possível alterar:
+
+- Cores principais
+- Tipografia
+- Espaçamentos
+- Bordas
+- Tamanho das seções
+- Estilo dos cards
+
+No arquivo `script.js`, já existem:
+
+- menu responsivo;
+- animações de entrada;
+- QR Code gerado automaticamente com o link da página publicada.
+
+## Como publicar no GitHub Pages
+
+1. Criar um repositório público no GitHub.
+2. Enviar os arquivos `index.html`, `style.css`, `script.js`, `README.md` e a pasta `assets`.
+3. Acessar o repositório no GitHub.
+4. Clicar em **Settings**.
+5. Acessar **Pages**.
+6. Em **Build and deployment**, selecionar:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/root`
+7. Salvar.
+8. Aguardar o GitHub gerar o link público.
+
+O link ficará semelhante a:
 
 ```bash
-npm run build
+https://seu-usuario.github.io/nome-do-repositorio/
 ```
 
-Os arquivos ficam na pasta `dist`.
+## Uso como banner de apresentação
 
-## Estrutura
+Este modelo foi pensado para substituir ou complementar um banner estático. Durante uma apresentação, os alunos podem exibir a landing page em um notebook, projetor ou TV e permitir que a banca acesse pelo QR Code.
 
-```
-landing-page/
-├── public/
-│   ├── favicon.svg
-│   └── telas/          prints do sistema
-└── src/
-    ├── components/     uma seção da página por arquivo
-    ├── App.jsx
-    ├── App.css         estilo das seções
-    ├── index.css       cores e estilos gerais
-    └── main.jsx
-```
+A página inclui seções para:
 
-As cores ficam em variáveis no começo do `index.css`, então dá para mudar o tema por ali.
+- apresentação visual do projeto;
+- problema e solução;
+- funcionalidades;
+- tecnologias;
+- arquitetura;
+- demonstração do MVP;
+- ODS e impacto;
+- equipe;
+- QR Code de acesso.
 
-## Observações
+## Sugestões de melhoria
 
-- Os dados que aparecem nas telas são fictícios, só para demonstração.
-- Os preços dos planos ainda são provisórios.
-- Os valores da calculadora são estimativas.
+Os alunos podem enriquecer a página incluindo:
 
-## Equipe DevNexus
+- imagens reais do sistema;
+- GIFs demonstrativos;
+- vídeo incorporado;
+- link para protótipo Figma;
+- link para aplicação funcional;
+- diagrama de arquitetura;
+- resultados de testes com usuários;
+- métricas de avaliação;
+- depoimentos ou validações.
 
-- Miguel – gestor do projeto e engenheiro de software
-- Rafael – redes e banco de dados
-- Thiago – Scrum Master e Product Owner
-- Marcos – requisitos e viabilidade
-- Luciana – front-end e back-end
+## Critérios de avaliação sugeridos
 
-Orientação: Profa. Brenda Medina · Mentoria: Prof. Daniel Ohata
+| Critério | Peso |
+|---|---:|
+| Clareza da proposta e do problema | 2,0 |
+| Qualidade visual e organização da página | 2,0 |
+| Apresentação da solução e funcionalidades | 2,0 |
+| Demonstração do MVP ou protótipo | 1,5 |
+| Responsividade e usabilidade | 1,0 |
+| Publicação correta no GitHub Pages | 1,0 |
+| README e organização do repositório | 0,5 |
+
+## Observação
+
+Após publicar no GitHub Pages, abra a página pelo link público para que o QR Code seja gerado corretamente com o endereço real da landing page.
+
+------------------------------------------
+
+# Landpage – Projeto Acadêmico
+
+Está explicação a seguir, serve para informar como o grupo pode publicar a landpage pelo recurso Github Pages
+
+
+A proposta da página é funcionar como:
+
+- banner digital;
+- apresentação visual;
+- portfólio do projeto;
+- vitrine tecnológica;
+- material para pitch e bancas;
+- página oficial publicada online.
+
+---
+
+Para reproduzir e hospedar o projeto banner-digital-interativo-github-pages.zip, faça assim:
+
+1. Descompactar o arquivo
+
+Extraia o .zip. A pasta deve conter algo parecido com:
+
+index.html
+style.css
+script.js
+assets/
+README.md
+
+O arquivo mais importante é o index.html, pois o GitHub Pages procura esse arquivo para abrir a página.
+
+2. Criar um repositório no GitHub
+
+No GitHub:
+
+- New repository
+
+Sugestão de nome:
+
+- landingpage
+
+Deixe como Public.
+
+3. Enviar os arquivos
+
+Entre no repositório criado e clique em:
+
+Add file > Upload files
+
+Envie todos os arquivos da pasta extraída, não envie apenas a pasta compactada. 
+Caso tenha dificuldade siga os procedimentos de envio utilizando o Github Desktop ou Git pelo prompt.
+
+A estrutura final no GitHub deve ficar assim:
+
+banner-digital-projeto/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+└── README.md
+
+
+4. Ativar o GitHub Pages
+
+No repositório, acesse:
+
+Settings > Pages
+
+Em Build and deployment, selecione:
+
+Source: Deploy from a branch
+Branch: main
+Folder: /root
+
+Depois clique em Save.
+
+
+
+5. Acessar o site publicado
+
+Após alguns minutos, o GitHub irá gerar um link parecido com:
+
+https://seuusuario.github.io/banner-digital-projeto/
+
+Esse será o link público da landing page.
+
+
+
+6. Editar o conteúdo do projeto
+
+Os alunos deverão alterar principalmente o arquivo:
+
+index.html
+
+Para trocar:
+
+nome do projeto;
+nome da equipe;
+problema;
+solução;
+funcionalidades;
+tecnologias;
+links do GitHub;
+QR Code;
+imagens;
+vídeo demonstrativo.
+
+As imagens devem ser colocadas dentro de: assets/
+
+
+7. Entrega recomendada dos alunos
+
+A entrega pode conter:
+
+Nome da equipe:
+Nome do projeto:
+Link do GitHub:
+Link do GitHub Pages:
+Link do vídeo demonstrativo:
+Link do protótipo:
+
+Exemplo:
+
+Equipe X – Projeto Y
+GitHub: https://github.com/usuario/X
+Landing Page: https://usuario.github.io/X/
+Vídeo: link do YouTube ou Drive
+Protótipo: link do Figma
