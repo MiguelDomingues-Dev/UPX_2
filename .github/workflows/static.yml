@@ -1,4 +1,4 @@
-# Publica a landing page (Vite) no GitHub Pages
+# Publica a landing page (HTML, CSS e JS estáticos) no GitHub Pages
 name: Deploy static content to Pages
 
 on:
@@ -25,24 +25,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Gerar o site
-        working-directory: landing-page
-        run: |
-          npm ci
-          npm run build
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './landing-page/dist'
+          path: './landing-page'
 
       - name: Deploy to GitHub Pages
         id: deployment
