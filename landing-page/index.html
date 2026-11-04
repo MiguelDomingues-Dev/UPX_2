@@ -7,19 +7,29 @@
       name="description"
       content="Reduza: gestão de resíduos para empresas. Projeto da disciplina UPX2, Centro Universitário Facens, 2026."
     />
-    <title>Reduza | Banner Digital</title>
+    <title>Reduza | Gestão de resíduos para empresas</title>
+    <link rel="icon" href="assets/imagens/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Reduza | Gestão de resíduos para empresas" />
+    <meta
+      property="og:description"
+      content="Veja, por setor, quanto resíduo a empresa gera e quanto isso custa."
+    />
+    <meta property="og:image" content="assets/imagens/painel.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="topbar">
-      <a href="#inicio" class="logo">Reduza</a>
+      <a href="#inicio" class="logo">
+        <img src="assets/imagens/favicon.svg" alt="" width="28" height="28" />
+        Reduza
+      </a>
       <nav class="menu" id="menu">
         <a href="#problema">Problema</a>
         <a href="#solucao">Solução</a>
-        <a href="#demo">Demonstração</a>
+        <a href="#telas">O sistema</a>
         <a href="#equipe">Equipe</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
         ☰
       </button>
     </header>
@@ -38,7 +48,7 @@
             rejeito por descarte errado.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#demo">Ver Demonstração</a>
+            <a class="btn primary" href="#telas">Ver o sistema</a>
             <a
               class="btn secondary"
               href="https://github.com/MiguelDomingues-Dev/UPX_2"
@@ -49,26 +59,23 @@
           </div>
         </div>
 
-        <div class="hero-card reveal">
+        <figure class="hero-card reveal">
           <div class="mockup-window">
             <div class="mockup-bar">
               <span></span><span></span><span></span>
+              <small>Reduza · Painel do mês</small>
             </div>
-            <div class="mockup-body">
-              <div class="mockup-title">Painel do mês</div>
-              <div class="mockup-screen">
-                <div class="chart-card"></div>
-                <div class="chart-lines">
-                  <span></span><span></span><span></span><span></span>
-                </div>
-              </div>
-              <p>
-                Total do mês comparado com o anterior, custo de destinação em
-                reais, taxa de descarte correto e setor que mais gera resíduo.
-              </p>
-            </div>
+            <img
+              src="assets/imagens/painel.png"
+              alt="Painel do mês do Reduza: resíduos no mês, custo de destinação, taxa de descarte correto, gráficos por categoria e por setor"
+              width="1280"
+              height="820"
+            />
           </div>
-        </div>
+          <figcaption>
+            Tela real do protótipo, com dados fictícios de uma empresa exemplo.
+          </figcaption>
+        </figure>
       </section>
 
       <section class="metrics reveal" aria-label="Indicadores do projeto">
@@ -88,10 +95,6 @@
           <span
             >Multa máxima por descarte irregular (Decreto nº 6.514/2008)</span
           >
-        </article>
-        <article>
-          <strong>QR</strong>
-          <span>Acesso rápido na apresentação</span>
         </article>
       </section>
 
@@ -167,17 +170,16 @@
         <div class="section-heading reveal">
           <span class="section-label">Implementação</span>
           <h2>Tecnologias utilizadas</h2>
-          <p>O sistema Reduza foi feito em Java, com banco de dados MySQL.</p>
+          <p>O sistema Reduza é uma aplicação desktop em Java, com banco de dados MySQL. Esta página é HTML, CSS e JavaScript puros.</p>
         </div>
         <div class="tech-list reveal">
-          <span>Java</span>
+          <span>Java 17</span>
+          <span>Swing</span>
           <span>MySQL</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Git</span>
-          <span>GitHub Pages</span>
+          <span>Maven</span>
+          <span>JUnit 5</span>
+          <span>HTML, CSS e JavaScript</span>
+          <span>Git e GitHub Pages</span>
         </div>
       </section>
 
@@ -203,32 +205,50 @@
         </div>
       </section>
 
-      <section class="section" id="demo">
+      <section class="section" id="telas">
         <div class="section-heading reveal">
           <span class="section-label">O sistema</span>
           <h2>Telas reais do protótipo</h2>
-          <p>
-            Painel do mês, registro de resíduo, histórico, metas por setor,
-            copos e canecas e inspeção do descarte. Dados fictícios de uma
-            empresa exemplo, usados para demonstração.
-          </p>
+          <p>Escolha uma tela para ver o que ela faz.</p>
         </div>
-        <div class="demo-box reveal">
-          <div class="play-button">▶</div>
-          <h3>Área de Demonstração</h3>
-          <p>
-            O simulador de copos e canecas mostra em quantos meses a troca se
-            paga, e a inspeção do descarte gera um placar por setor, nunca por
-            pessoa.
-          </p>
-          <a
-            class="btn primary"
-            href="https://migueldomingues-dev.github.io/UPX_2/"
-            target="_blank"
-            rel="noopener"
-            >Ver Protótipo</a
-          >
+
+        <div class="tabs reveal" role="tablist" aria-label="Telas do sistema">
+          <button class="tab active" role="tab" aria-selected="true" data-tela="0">Painel</button>
+          <button class="tab" role="tab" aria-selected="false" data-tela="1">Registrar resíduo</button>
+          <button class="tab" role="tab" aria-selected="false" data-tela="2">Histórico</button>
+          <button class="tab" role="tab" aria-selected="false" data-tela="3">Metas</button>
+          <button class="tab" role="tab" aria-selected="false" data-tela="4">Descartáveis</button>
+          <button class="tab" role="tab" aria-selected="false" data-tela="5">Inspeções</button>
         </div>
+
+        <div class="screen reveal" role="tabpanel">
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+              <small id="telaBarra">Reduza · Painel do mês</small>
+            </div>
+            <img
+              id="telaImagem"
+              src="assets/imagens/painel.png"
+              alt="Painel do mês"
+              width="1280"
+              height="820"
+              loading="lazy"
+            />
+          </div>
+          <div class="screen-info">
+            <h3 id="telaTitulo">Painel do mês</h3>
+            <p id="telaTexto">
+              O resumo que o gestor abre primeiro: total do mês comparado com o
+              anterior, custo de destinação em reais, taxa de descarte correto e
+              setor que mais gera resíduo.
+            </p>
+          </div>
+        </div>
+
+        <p class="note">
+          Dados fictícios de uma empresa exemplo, usados para demonstração.
+        </p>
       </section>
 
       <section class="section split" id="ods">
@@ -298,7 +318,7 @@
           </p>
         </div>
         <div class="qr-card reveal">
-          <img id="qrCode" alt="QR Code da landing page" />
+          <img id="qrCode" alt="QR Code da landing page" width="180" height="180" />
           <small>QR Code gerado automaticamente com o link desta página.</small>
         </div>
       </section>
@@ -309,7 +329,15 @@
         Centro Universitário Facens • UPX2 – Usina de Projetos Experimentais II
         • Análise e Desenvolvimento de Sistemas • Sorocaba/SP • 2026
       </p>
-      <p>Desenvolvido pela equipe DevNexus.</p>
+      <p>
+        Desenvolvido pela equipe DevNexus •
+        <a
+          href="https://github.com/MiguelDomingues-Dev/UPX_2"
+          target="_blank"
+          rel="noopener"
+          >Repositório no GitHub</a
+        >
+      </p>
     </footer>
 
     <script src="script.js"></script>
