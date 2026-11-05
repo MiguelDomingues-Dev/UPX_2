@@ -89,9 +89,9 @@ window.addEventListener('load', () => {
   });
 });
 
-// Aberta pelo arquivo local, a página não tem link público: usa o do GitHub Pages
+// QR code aponta para a pasta do projeto no Google Drive
 const qrCode = document.getElementById('qrCode');
-const pageUrl = window.location.protocol.startsWith('http')
-  ? window.location.href.split('#')[0]
-  : 'https://migueldomingues-dev.github.io/UPX_2/';
-qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(pageUrl)}`;
+const linkDrive = 'https://drive.google.com/drive/folders/1dUNGdxdcWQ1Qt3oy-vyQ6WFCJOCS_iZ2';
+
+qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=440x440&qzone=4&ecc=M&color=10302A&bgcolor=FFFFFF&data=${encodeURIComponent(linkDrive)}`;
+qrCode.alt = 'QR code para a pasta do projeto Reduza no Google Drive';
